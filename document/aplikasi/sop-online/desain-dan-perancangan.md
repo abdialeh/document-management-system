@@ -103,7 +103,9 @@ Permodelan rancangan sistem yang digunakan adalah UML (*Unified Modeling Languag
 
 #### 3.5.1. Workflow
 
-##### 3.5.1.1. Workflow State
+##### 3.5.1. Workflow Pengajuan Aplikasi
+
+###### 3.5.1.1. Workflow State
 
 | name        | label       | description                                                |
 |-------------|-------------|------------------------------------------------------------|
@@ -115,13 +117,19 @@ Permodelan rancangan sistem yang digunakan adalah UML (*Unified Modeling Languag
 | recommendation    | Recommendation    | Rekomendasi atas usulan pembuatan aplikasi           |
 
 
-##### 3.5.1.2. Workflow Transition
+###### 3.5.1.2. Workflow Transition
+
+| name        | label       | description                                                |
+|-------------|-------------|------------------------------------------------------------|
+| propose-to-propose    | Proposed    | Usulan pembuatan aplikasi telah dibuat |
+| propose-to-internal-review    | Internal Reviewed    | Usulan pembuatan aplikasi akan dimintakan review |
+| internal-review-to-forward-1    | Forward    | Usulan pembuatan aplikasi selesai direview dan akan diteruskena ke Pimpinan OPD |
 
 
-##### 3.5.1.3. Workflow Guard
+###### 3.5.1.3. Workflow Guard
 
 
-##### 3.5.1.4. Workflow Notification
+###### 3.5.1.4. Workflow Notification
 
 
 #### 3.5.2 Proses Pengajuan
