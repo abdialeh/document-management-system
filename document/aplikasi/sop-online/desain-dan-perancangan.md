@@ -1,7 +1,7 @@
 ---
 layout: document
-title: Desain dan Perancangan
-description: Deskripsi di sini.
+title: Desain dan Perancangan SOP Online
+description: Desain dan Perancangan Aplikasi SOP Online yang digunakan Pemerintah Provinsi Banten.
 group: aplikasi
 cat: sop-online
 toc: true
@@ -12,6 +12,8 @@ toc: true
 ## ABSTRAK
 
 Pengembangan aplikasi, atau bisa disebut sebagai pengembangan *software* atau desain *software*, kerap kali disalahartikan sebagai kegiatan dimana seorang *programmer* melakukan *coding*, tetapi sebenarnya yang dimaksud pengembangan aplikasi merupakan serangkaian proses yang dilakukan dari saat pembuatan kosep aplikasi hingga aplikasi tersebut selesai dan siap digunakan.
+
+SOP Online adalah prosedur yang dilakukan secara kronologis untuk menyelesaikan suatu pekerjaan yang bertujuan untuk memperoleh hasil kerja yang paling efektif dari para pekerja dengan biaya yang serendah-rendahnya.
 
 ## DAFTAR ISI
 
@@ -103,7 +105,9 @@ Permodelan rancangan sistem yang digunakan adalah UML (*Unified Modeling Languag
 
 #### 3.5.1. Workflow
 
-##### 3.5.1.1. Workflow State
+##### 3.5.1. Workflow Pengajuan Aplikasi
+
+###### 3.5.1.1. Workflow State
 
 | name        | label       | description                                                |
 |-------------|-------------|------------------------------------------------------------|
@@ -115,13 +119,19 @@ Permodelan rancangan sistem yang digunakan adalah UML (*Unified Modeling Languag
 | recommendation    | Recommendation    | Rekomendasi atas usulan pembuatan aplikasi           |
 
 
-##### 3.5.1.2. Workflow Transition
+###### 3.5.1.2. Workflow Transition
+
+| name        | label       | description                                                |
+|-------------|-------------|------------------------------------------------------------|
+| propose-to-propose    | Proposed    | Usulan pembuatan aplikasi telah dibuat |
+| propose-to-internal-review    | Internal Reviewed    | Usulan pembuatan aplikasi akan dimintakan review |
+| internal-review-to-forward-1    | Forward    | Usulan pembuatan aplikasi selesai direview dan akan diteruskena ke Pimpinan OPD |
 
 
-##### 3.5.1.3. Workflow Guard
+###### 3.5.1.3. Workflow Guard
 
 
-##### 3.5.1.4. Workflow Notification
+###### 3.5.1.4. Workflow Notification
 
 
 #### 3.5.2 Proses Pengajuan
